@@ -6,6 +6,7 @@ jobs:
   build-and-push:
     environment:
       IMAGE: aprokopyev/flaskapp
+      docker login b742caaa-cdb1-49d3-a99b-a11b1506de7b
     executor: docker/docker
     steps:
       - setup_remote_docker
