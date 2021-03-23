@@ -25,11 +25,27 @@ A:
 	The longer development continues on a branch without merging back to the mainline, the greater the risk of multiple integration conflicts[4] and failures when the developer branch is eventually merged back. When developers submit code to the repository they must first update their code to reflect the changes in the repository since they took their copy. The more changes the repository contains, the more work developers must do before submitting their own changes.
 	Eventually, the repository may become so different from the developers' baselines that they enter what is sometimes referred to as "merge hell", or "integration hell",[5] where the time it takes to integrate exceeds the time it took to make their original changes.
 
+	Continuous integration (CI) is a software development strategy that increases the speed of development while ensuring the quality of the code that teams deploy. Developers continually commit code in small increments (at least daily, or even several times a day), which is then automatically built and tested before it is merged with the shared repository.
+	
+	Continuous integration overview:
+	    Every developer commits daily, or even more often, to a shared mainline code repository
+	    Every commit triggers an automated build and test of the codebase
+	    If the build or any test fails, it’s repaired quickly – often within minutes
+
+	Continuous integration works hand-in-hand with Agile methodologies. Team members work on incremental “stories” and the code for these software changes is merged incrementally into the shared software repository multiple times a day.
+
+	Continuous integration is the automated building and testing of your application on every new commit.
+
+
 3. What is Continuous deployment?
 A:
 	It is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time and, when releasing the software, doing so manually.[1][2] It aims at building, testing, and releasing software with greater speed and frequency. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.
 	CD contrasts with continuous deployment, a similar approach in which software is also produced in short cycles but through automated deployments rather than manual ones. 
 	Continuous delivery and DevOps are similar in their meanings and are often conflated, but they are two different concepts.[3] DevOps has a broader scope,[4] and centers around the cultural change, specifically the collaboration of the various teams involved in software delivery (developers, operations, quality assurance, management, etc.), as well as automating the processes in software delivery.[4] Continuous delivery, on the other hand, is an approach to automate the delivery aspect, and focuses on bringing together different processes and executing them more quickly and more frequently.[5] Thus, DevOps can be a product of continuous delivery, and CD flows directly into DevOps.
+
+	Continuous delivery is a state where your application is always ready to be deployed. A manual step is required to actually deploy the application.
+	Continious deployment is like a continious delivery but with an automatic deployment without manual approval.
+	The automation of building, testing, and deploying. If all tests pass, every new commit will push new code through the entire development pipeline to production with no manual intervention.
 
 4. What types of deployment can you name and describe ? (Green-blue, etc.)
 A:
