@@ -55,3 +55,6 @@ workflows:
      - Now-Complete:
          requires:
            - Hold-For-Approval
+  Workflow2:
+    jobs:
+     - Hello-World
