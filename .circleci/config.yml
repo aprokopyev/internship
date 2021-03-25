@@ -13,6 +13,6 @@ jobs:
       - run:
           name: Code Has Arrived
           command: |
-            ls -al
+            ls -al devops/
             echo '^^^That should look familiar^^^'
 
