@@ -23,18 +23,18 @@ A:
 	In software engineering, continuous integration (CI) is the practice of merging all developers' working copies to a shared mainline several times a day.
 	When embarking on a change, a developer takes a copy of the current code base on which to work. As other developers submit changed code to the source code repository, this copy gradually ceases to reflect the repository code. Not only can the existing code base change, but new code can be added as well as new libraries, and other resources that create dependencies, and potential conflicts.
 	The longer development continues on a branch without merging back to the mainline, the greater the risk of multiple integration conflicts[4] and failures when the developer branch is eventually merged back. When developers submit code to the repository they must first update their code to reflect the changes in the repository since they took their copy. The more changes the repository contains, the more work developers must do before submitting their own changes.
-	Eventually, the repository may become so different from the developers' baselines that they enter what is sometimes referred to as "merge hell", or "integration hell",[5] where the time it takes to integrate exceeds the time it took to make their original changes.
+	Eventually, the repository may become so different from the developers' baselines that they enter what is sometimes referred to as "merge hell", or "integration hell",[5] where the time it takes to integrate exceeds the time it took to make their original changes.  
 
-	Continuous integration (CI) is a software development strategy that increases the speed of development while ensuring the quality of the code that teams deploy. Developers continually commit code in small increments (at least daily, or even several times a day), which is then automatically built and tested before it is merged with the shared repository.
+	Continuous integration (CI) is a software development strategy that increases the speed of development while ensuring the quality of the code that teams deploy. Developers continually commit code in small increments (at least daily, or even several times a day), which is then automatically built and tested before it is merged with the shared repository.  
 	
-	Continuous integration overview:
-	    Every developer commits daily, or even more often, to a shared mainline code repository
-	    Every commit triggers an automated build and test of the codebase
-	    If the build or any test fails, it’s repaired quickly – often within minutes
+	Continuous integration overview:  
+	    Every developer commits daily, or even more often, to a shared mainline code repository  
+	    Every commit triggers an automated build and test of the codebase  
+	    If the build or any test fails, it’s repaired quickly – often within minutes  
 
-	Continuous integration works hand-in-hand with Agile methodologies. Team members work on incremental “stories” and the code for these software changes is merged incrementally into the shared software repository multiple times a day.
+	Continuous integration works hand-in-hand with Agile methodologies. Team members work on incremental “stories” and the code for these software changes is merged incrementally into the shared software repository multiple times a day.  
 
-	Continuous integration is the automated building and testing of your application on every new commit.
+	Continuous integration is the automated building and testing of your application on every new commit.  
 
 
 3. What is Continuous deployment?
