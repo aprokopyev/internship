@@ -21,8 +21,8 @@ A(nswer):
 
 2. What command can I use to undo the last commit?  
 A:  
-	Local keeping uncommitted source: 	git reset --soft HEAD&#007E1  
-	Local deleting uncommitted source: 	git reset --hard HEAD&#007E1  
+	Local keeping uncommitted source: 	git reset --soft HEAD&#7E1  
+	Local deleting uncommitted source: 	git reset --hard HEAD&#7E1
 	Remote: 				git revert HEAD  
 
 3. What command can I use to create a new branch and a new tag?  
