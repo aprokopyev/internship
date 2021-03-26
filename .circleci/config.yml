@@ -8,11 +8,11 @@ jobs:
   provectus_job:
     environment:
       IMAGE: aprokopyev/provectus
-    executor: docker/docker     ?
+    executor: docker/docker # default python executor
     steps:
       - setup_remote_docker
       - checkout
-      - docker/check            ?
+      - docker/check # verify dockerhub login
       - run:
           name: build step
           working_directory: "devops/02\ -\ dockerfile"
