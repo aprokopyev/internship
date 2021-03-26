@@ -2,49 +2,32 @@ version: 2.1
 orbs:
   docker: circleci/docker@1.5.0
 
+# Modified Accuratiorem's YML file
+
 jobs:
-  build-and-push:
+  provectus_job:
     environment:
-      IMAGE: aprokopyev/flaskapp
-    executor: docker/docker
+      IMAGE: aprokopyev/provectus
+    executor: docker/docker	?
     steps:
       - setup_remote_docker
       - checkout
-      - docker/check
+      - docker/check		?
       - run:
-          name: BUILD
+          name: build step
           working_directory: "devops/02\ -\ dockerfile"
           command: |
             SHORT_COMMIT_ID=$(git rev-parse --short "${CIRCLE_SHA1}")
             IMAGE_TAG="0.$CIRCLE_BUILD_NUM-$SHORT_COMMIT_ID"
-            docker build -t $IMAGE:$IMAGE_TAG .
-            docker push $IMAGE:$IMAGE_TAG
-
+            IMAGE_NAME="$IMAGE:$IMAGE_TAG"
+            docker build -t $IMAGE_NAME .
+            docker push $IMAGE_NAME
 workflows:
-  commit:
+  on_commit:
     jobs:
-      - build-and-push:
+      - provectus_job:
           context:
-            - docker-hub-creds
+            - Context1
           filters:
             branches:
               only: main
-
-
-
-
-
-
-## Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
-#version: 2.1
-## Use a package of configuration called an orb.
-#orbs:
-#  # Declare a dependency on the welcome-orb
-#  welcome: circleci/welcome-orb@0.4.1
-## Orchestrate or schedule a set of jobs
-#workflows:
-#  # Name the workflow "welcome"
-#  welcome:
-#    # Run the welcome/run job in its own container
-#    jobs:
-#      - welcome/run
