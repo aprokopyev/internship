@@ -59,6 +59,7 @@ A:
 
 5. What types of testing do you know? What are they?  
 A:  
+
     Functional Testing types include:  
 	    Unit Testing  
 	    Integration Testing  
@@ -88,6 +89,7 @@ A:
 
 6. `*` Describe how the code from the developer's computer reaches the production environment? What stages would you set up?  
 A:
+
 	Developer's local PC environment from which the developer pushes his code into his own feature branch on CI server repository.  
 	CI environment with a shared GIT repository, it may run Jenkins, Gitlab, etc.  
 	Test environment executes required unit tests  
