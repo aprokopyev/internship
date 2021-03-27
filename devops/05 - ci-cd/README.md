@@ -111,4 +111,4 @@ A:
     *  `*` update you helm charts and umbrella helm chart, create release in your repository, download release and redeploy umbrella helm chart to minikube for testing
 
 A:  
-	Will be done.
+	https://hub.docker.com/r/aprokopyev/provectus/tags?page=1&ordering=last_updated
