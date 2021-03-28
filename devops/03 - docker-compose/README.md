@@ -26,19 +26,20 @@ Docker compose with 3 applications (frontend + backend + DB).
 
 1. What is the difference between Docker Compose and dockerfile? Why do I need Docker Compose?  
 A:  
-	Docker compose is used to orchestrate several containers while Dockerfile is used tp build  a single
-	container. Actually Docker compose may use Dockerfile for build command of docker-compose.yml.
+	Docker compose is used to orchestrate several containers while Dockerfile is used  
+	to build a Docker image. Actually Docker compose may use Dockerfile for  
+	its build command in the docker-compose.yml.  
 	Docker compose uses a declarative style where sequence of instructions does not matter.
 
 2. How do I parameterize compose for different environments?  
 A:  
-	Each environment can use its own specific Docker compose file.
-	Several Docker compose files can be specified on the command line with -f switch.
+	Each environment can use its own specific Docker compose file.  
+	Several Docker compose files can be specified on the command line with -f switch.  
 
 3. What types of entities are used in docker-compose and for what purpose?  
 A:  
-	Following entities can be used: configs, secrets, volumes, networks, services.  
-	More details at: https://docs.docker.com/compose/compose-file/compose-file-v3/
+	Following entities can be used: configs, secrets, volumes, networks, services.   
+	More details at: https://docs.docker.com/compose/compose-file/compose-file-v3/ 
 
 4. `*` How to output application logs?  
 A:  
@@ -47,11 +48,12 @@ A:
 
 4. `*` How to copy\upload a file from host machine to the container?  
 A:  
-	docker cp SomeFile ContainerName:/Path/SomeFile
+	docker cp SomeFile ContainerName:/Path/SomeFile  
 
 5. `*` How to save file changes made inside the container?  
 A:  
-	There are several ways: docker commit, persistent volumes, network storages like block SANs (e.g. iSCSI, etc.) and network file systems like NAS (CIFS, NFS, etc.) or even fuse mounts (like sshfs, ftpfs, etc.).
+	There are several ways: docker commit, persistent volumes, network storages like block SANs (e.g. iSCSI, etc.)  
+	and network file systems like NAS (CIFS, NFS, etc.) or even fuse mounts (like sshfs, ftpfs, etc.).  
 
 ## Tasks
 
