@@ -114,4 +114,4 @@ A:
 	Please use the latest build of the image from:
 	https://hub.docker.com/r/aprokopyev/provectus/tags?page=1&ordering=last_updated
 
-	![Screenshot of the results](https://raw.githubusercontent.com/aprokopyev/internship/main/devops/05%20-%20ci-cd/provectus_ci.jpg)
+	![Screenshot](provectus_ci.jpg)
